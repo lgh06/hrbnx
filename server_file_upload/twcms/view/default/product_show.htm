@@ -78,48 +78,7 @@
 			</div>
 			{/block}
 
-			{block:comment pagenum="20" firstnum="20"}
-			<div class="t10" id="ctf">
-				<div class="b2_tit">
-					<b>发表评论</b>
-				</div>
-				<div class="b2_cont comment_form cf">
-					<form id="ctf_form" action="{$tw[webdir]}index.php?u=comment-post-ajax-1" method="post">
-						<div class="ctf_cont"><textarea name="content" id="ctf_content" tabindex="1">文明上网，理性发言</textarea></div>
-						<div class="ctf_body">
-							<div class="ctf_txt" title="请填写昵称"><input name="author" id="ctf_author" type="text" value="访客" /></div>
-							<div class="ctf_sub"><input type="submit" id="ctf_submit" value="发表评论" /></div>
-							<div id="ctf_tips"></div>
-						</div>
-						<input type="hidden" name="cid" value="{$gdata[cid]}" />
-						<input type="hidden" name="id" value="{$gdata[id]}" />
-					</form>
-				</div>
-			</div>
 
-			<div class="t10">
-				<div class="b2_tit">
-					<a class="more" href="{$gdata[comment_url]}">更多</a>
-					<b>网友评论</b> （<font color="red">{$gdata[comments]}</font> 条评论）
-				</div>
-				<div id="comment_cont" class="b2_cont comment">
-					{if:empty($data[list])}
-						暂无评论
-					{else}
-					{loop:$data[list] $v $k}
-					<div class="li">
-						<div class="avatar"><img src="{$tw[tpl]}img/avatar.png" /></div>
-						<div class="post_body">
-							<div class="post_header"><b>{$v[author]} ({$v[ip]})</b> {$v[date]}</div>
-							<div class="post_message">{$v[content]}</div>
-						</div>
-					</div>
-					{/loop}
-					<a id="load_more" href="javascript:;" next_url="{$data[next_url]}" isnext="{$data[isnext]}">更多评论</a>
-					{/if}
-				</div>
-			</div>
-			{/block}
 		</div>
 
 		<div class="m_r">
