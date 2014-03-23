@@ -31,3 +31,5 @@
 
 #directories
 server_file_backup/
+server_db_backup/
+res/
