@@ -276,4 +276,4 @@ body{_background:url(about:blank) fixed}
 .lists li:hover,.cat_r li:hover{-webkit-transform:scale(1.02)}
 
 
-.logo_mid{float:left;width:300px;font-size:15px;border:0 none;margin:0;padding:0;}
+.logo_mid{float:left;width:460px;font-size:15px;border:0 none;margin:0;padding:0;position:relative;top:12px;text-align:center;}
