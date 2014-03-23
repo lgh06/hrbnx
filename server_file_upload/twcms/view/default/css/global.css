@@ -274,3 +274,6 @@ body{_background:url(about:blank) fixed}
 .pho_list img,.pro_list img,.lists li,.flink li,.c2_l img,.c2_r img,.p_cont img,.art_pic img{-webkit-transition:all .5s}
 .pho_list img:hover,.pro_list img:hover,.flink li:hover,.c2_l img:hover,.c2_r img:hover,.p_cont img:hover,.art_pic img:hover{-webkit-transform:rotateY(360deg)}
 .lists li:hover,.cat_r li:hover{-webkit-transform:scale(1.02)}
+
+
+.logo_mid{float:left;width:300px;font-size:15px;border:0 none;margin:0;padding:0;}
